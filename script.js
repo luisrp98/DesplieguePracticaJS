@@ -10,7 +10,7 @@ const fetchPokemon = (pokeUrl) => {
   fetch(pokeUrl)
     .then((res) => {
       if (res.status != '200') {
-        pokeImage('/img/404Error.png');
+        pokeImage('img/404Error.png');
         setName('Error 404');
         setType('Error');
       } else {
